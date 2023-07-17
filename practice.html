@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+ <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@1,300&family=Poppins:wght@400;500;600&family=Roboto+Mono:wght@500&family=Rubik+Gemstones&display=swap');
+
+
+.display_align-center{
+      display: flex;
+      align-items: center;
+    }
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.242); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.background-image {
+  position: absolute;
+  width: 520px;
+  height: 420px;
+  background-image: url('images/backgroundimg.png'); 
+  background-repeat: no-repeat;
+  align-items: center;
+  border-radius: 20px;
+  justify-content: center;
+  background-size: cover;
+}
+
+ .content {
+  z-index: 1;
+  padding: 20px;
+  width: 308px;
+  height: 380px;
+  margin-left: 190px ;
+  border-top-right-radius: 20px ;
+  border-bottom-right-radius: 20px ;
+  background-color: #35A29F;
+}
+
+.text1{
+      font-size: 22px; 
+      font-weight: bold; 
+      padding-bottom: 5px;
+      font-family: 'Roboto Mono';
+       font-style: italic; 
+       font-weight: bolder;
+      color: white;
+    }
+
+    .text2{
+      font-size: 12px; 
+      padding:5px;
+      color: rgba(245, 245, 245, 0.818);
+    margin-top: 12px;
+    }
+
+    .text3{
+      font-size: 16px;
+      font-weight: 100;
+    }
+  /* styling input field */
+    .phone-input {
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.flag-icon {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background-image: url('images/flag_icon.png'); 
+  background-size: contain;
+  cursor: pointer;
+}
+
+.arrow-icon {
+  position: absolute;
+  /* right: 10px; */
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+input[type='tel']{
+
+  padding: 10px 45px; 
+ /* width: 200px; */
+  border-radius: 10px;
+  border: none;
+  
+  
+}
+
+.btn{
+  display: inline-block;
+  margin-top: 13px;
+  padding: 1px 25px;
+  color: #fff;
+  font-size: 12px;
+  font-family: 'Roboto Mono';
+  background: linear-gradient(to right, orange,#E90064);
+  border: none;
+  border-radius: 30px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.extra{
+  font-size: 11px ;
+  margin: 12px 10px;
+  color: #ffffffb1;
+
+}
+.container{
+  display: flex;
+  margin: 2px 8px;
+}
+
+.box{
+   /* width: 5px; */
+   height:auto; 
+  font-size: 15px;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin: 8px 2px;
+  font-weight: lighter;
+  border-radius: 3px;
+}
+
+.small_box{
+  display: flex;
+}
+
+.small_box:not(:last-child)::after {
+  content: ":";
+  margin: 12px 1px; 
+color: #fff;
+}
+
+
+/* media queries */
+
+
+@media screen and (min-width: 500px) and (max-width: 850px){
+  .background-image{
+    width: 400px ;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+.content{
+  z-index: 1;
+  padding: 10px;
+  width: 250px;
+  height: 280px;
+  margin-left: 140px;
+}
+
+.text1{
+  font-size: 14px; 
+      font-weight: bold; 
+      padding-bottom: 2px;
+      font-family: 'Roboto Mono';
+       font-style: italic; 
+       font-weight: bolder;
+      color: white;
+}
+
+.text2{
+      font-size: 10px; 
+      padding:3px;
+    margin-top: 8px;
+    }
+
+    .flag-icon {
+  width: 18px;
+  height: 18px;
+
+}
+
+.arrow-icon {
+  margin-left: 24px;
+  cursor: pointer;
+}
+
+input[type='tel']{
+  padding: 7px 35px;  
+  width: 150px;
+  
+}
+
+.btn{
+  margin-top: 8px;
+  padding: 0px 12px;
+  font-size: 9px;
+}
+
+
+.extra{
+  font-size: 9px ;
+  margin: 8px 5px;
+}
+
+
+.box{
+  height: 10px;
+  font-size: 10px;
+}
+
+.small_box:not(:last-child)::after {
+  margin: 9px 1px; 
+
+}
+
+.component{
+  font-size: 12px;
+}
+
+}
+
+
+
+  </style>
+</head>
+<body style="justify-content: center; " class="display_align-center" >
+   
+  <div class="popup">
+
+    <div class="background-image"></div>
+    <div class="content">
+
+      <div style="color: rgba(255, 255, 255, 0.584);margin-top: 0; margin-right: 10px; font-size: 25px; justify-content: end; display: flex; cursor: pointer;">&times;</div>
+
+      <!-- Popup content goes here -->
+
+      <div style="padding: 8px;">
+
+        <div class="text1">10% OFF AND FREE SHIPPING </div>
+
+        <div class="text2">Sign up now and get 10% OFF your order plus free shipping</div>
+
+        <div class="phone-input">
+          <div class="flag-icon"></div>
+          <div class="arrow-icon"><i class="uil uil-angle-down skills_down skills_arrow"></i></div>
+          <input type="tel" placeholder=" Phone number" />
+        </div>
+
+        <div class="btn">
+          <p>GET MY COUPON CODE</p>
+        </div>
+
+      <div class="extra">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam minus ut earum, sed facere officiis aspernatur sapiente porro illum, non eligendi eum explicabo, aut similique. Vero, commodi. Nesciunt, tenetur facere.
+      </div>
+
+      <div class="component" style="margin-left: 8px; color: whitesmoke; font-family: 'Roboto Mono';">
+        Complete before :
+      </div>
+      <div class="container">
+       <div class="small_box">
+        <div class="box">1</div>
+        <div class="box">2</div>
+       </div>
+
+       <div class="small_box">
+        <div class="box">3</div>
+        <div class="box">4</div>
+       </div>
+
+       <div class="small_box">
+        <div class="box">5</div>
+        <div class="box">6</div>
+       </div>
+
+       <div class="small_box">
+        <div class="box">7</div>
+        <div class="box">8</div>
+       </div>
+
+       
+      </div>
+
+    </div>
+  </div>
+      
+</body>
